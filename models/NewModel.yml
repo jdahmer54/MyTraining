@@ -1,0 +1,14 @@
+unique_name: NewModel
+object_type: model
+label: NewModel
+metrics:
+  - unique_name: m_factinternetsales_orderquantity_sum
+relationships:
+  - unique_name: factinternetsales_orderdatekey_to_date_dimension_day_level
+    from:
+      dataset: factinternetsales
+      join_columns:
+        - orderdatekey
+    to:
+      dimension: date_dimension
+      level: day_level
